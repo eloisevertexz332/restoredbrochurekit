@@ -1,0 +1,12 @@
+{
+  "name": "config-merger-f92e56",
+  "version": "1.0.0",
+  "description": "A config-merger utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["config-merger", "utility"],
+  "license": "MIT"
+}
