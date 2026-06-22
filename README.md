@@ -1,4 +1,4 @@
-# config-merger-52dbad
+# config-merger-59648f
 
 A Node.js config-merger utility.
 

